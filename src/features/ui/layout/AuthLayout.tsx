@@ -1,66 +1,62 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 
-import Stack from '@mui/material/Stack';
+import LoginBackground from '@features/auth/assets/login-background.png';
+import SignUpBackground from '@features/auth/assets/sign-up-background.png';
+import { Box, Grid } from '@mui/material';
 
-import AppTheme from '../shared-theme/AppTheme';
-import ColorModeSelect from '../shared-theme/ColorModeSelect';
-import Content from './components/Content';
+import Logo from '../logo/Logo';
 
-export default function SignInSide(props: { disableCustomTheme?: boolean }) {
+export default function AuthLayout() {
+  const location = useLocation();
+  const isLoginPage = location.pathname === '/login';
+
   return (
-    <AppTheme {...props}>
-      <ColorModeSelect sx={{ position: 'fixed', top: '1rem', right: '1rem' }} />
-      <Stack
-        direction="column"
-        component="main"
-        sx={[
-          {
-            justifyContent: 'center',
-            height: 'calc((1 - var(--template-frame-height, 0)) * 100%)',
-            marginTop: 'max(40px - var(--template-frame-height, 0px), 0px)',
-            minHeight: '100%',
-          },
-          (theme) => ({
-            '&::before': {
-              content: '""',
-              display: 'block',
-              position: 'absolute',
-              zIndex: -1,
-              inset: 0,
-              backgroundImage:
-                'radial-gradient(ellipse at 50% 50%, hsl(210, 100%, 97%), hsl(0, 0%, 100%))',
-              backgroundRepeat: 'no-repeat',
-              ...theme.applyStyles('dark', {
-                backgroundImage:
-                  'radial-gradient(at 50% 50%, hsla(210, 100%, 16%, 0.5), hsl(220, 30%, 5%))',
-              }),
-            },
-          }),
-        ]}
+    <Grid container component="main" sx={{ height: '100vh' }}>
+      <Grid
+        item
+        xs={false}
+        sm={4}
+        md={6}
+        sx={{
+          backgroundImage: `url(${
+            isLoginPage ? LoginBackground : SignUpBackground
+          })`,
+          backgroundRepeat: 'no-repeat',
+          backgroundColor: (t) =>
+            t.palette.mode === 'light'
+              ? t.palette.grey[50]
+              : t.palette.grey[900],
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          borderTopRightRadius: 56,
+          borderBottomRightRadius: 56,
+        }}
+      />
+      <Grid
+        item
+        xs={12}
+        sm={8}
+        md={6}
+        sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
       >
-        <Stack
-          direction={{ xs: 'column-reverse', md: 'row' }}
+        <Box
           sx={{
+            height: '100%',
+            mx: { xs: 2, md: 4 },
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
             justifyContent: 'center',
-            gap: { xs: 6, sm: 12 },
-            p: 2,
-            mx: 'auto',
+            width: '100%',
+            maxWidth: 552,
           }}
         >
-          <Stack
-            direction={{ xs: 'column-reverse', md: 'row' }}
-            sx={{
-              justifyContent: 'center',
-              gap: { xs: 6, sm: 12 },
-              p: { xs: 2, sm: 4 },
-              m: 'auto',
-            }}
-          >
-            <Content />
-            <Outlet />
-          </Stack>
-        </Stack>
-      </Stack>
-    </AppTheme>
+          <Box mb={4}>
+            <Logo />
+          </Box>
+          <Outlet />
+        </Box>
+      </Grid>
+    </Grid>
   );
 }
