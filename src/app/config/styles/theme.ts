@@ -1,7 +1,8 @@
-import { createTheme } from '@mui/material';
+import { type LinkProps, createTheme } from '@mui/material';
 
 import { FontFamilies } from './FontFamilies';
 import { FontWeights } from './FontWeights';
+import LinkBehavior from './LinkBehavior';
 
 const theme = createTheme({
   palette: {
