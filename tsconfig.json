@@ -25,12 +25,11 @@
     "paths": {
       "@pages/*": ["src/pages/*"],
       "@features/*": ["src/features/*"],
-      "@config/*": ["src/app/config/*"]
+      "@config/*": ["src/app/config/*"],
+      "@store/*": ["src/app/store /*"],
+      "@services/*": ["src/app/services /*"]
     }
   },
   "include": ["src"],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
