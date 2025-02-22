@@ -7,7 +7,7 @@ import Login from '@pages/login';
 import NotFoundPage from '@pages/not-found';
 import SignUp from '@pages/sign-up';
 
-import { AppRoutes } from './AppRoutes';
+import { AppRoutes } from '../AppRoutes';
 
 export default function AppRouter() {
   return (
