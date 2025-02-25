@@ -34,7 +34,7 @@ interface Props {
 export default function AccountSidebar({ isMinimized, onClose }: Props) {
   const { md } = useBreakpoints();
   const user = useAppSelector(selectUser);
-  const userInitial = user?.displayName?.split(' ')[0][0];
+  const userInitial = user?.displayName?.[0];
 
   const onLinkClick = () => {
     if (!md) {
