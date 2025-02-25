@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "emitDecoratorMetadata": true,
     "composite": true,
     "declaration": true,
     "declarationMap": true,
