@@ -19,7 +19,7 @@ interface FormInput {
 }
 
 export default function SignUpForm() {
-  const auth = useAppSelector(selectUser);
+  const auth = useAppSelector(selectAuth);
   const { handleSubmit, control, password, onSubmit } = useSignUpForm();
 
   if (auth.user) {
