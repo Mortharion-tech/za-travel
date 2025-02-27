@@ -8,7 +8,7 @@ export function useAuthStateSubscription() {
   const dispatch = useAppDispatch();
 
   useEffect(() => {
-    auth.onAuthStateChanged((user) => {
+    const authStateListenerUnsubscribe = auth.onAuthStateChanged((user) => {
       if (user) {
         dispatch(
           userLoaded({
@@ -21,6 +21,9 @@ export function useAuthStateSubscription() {
         dispatch(logout());
       }
     });
+
+    return () => authStateListenerUnsubscribe();
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 }
