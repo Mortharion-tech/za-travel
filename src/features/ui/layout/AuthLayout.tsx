@@ -1,8 +1,9 @@
 import { Outlet, useLocation } from 'react-router-dom';
 
+import { Box, Grid } from '@mui/material';
+
 import LoginBackground from '@features/auth/assets/login-background.png';
 import SignUpBackground from '@features/auth/assets/sign-up-background.png';
-import { Box, Grid } from '@mui/material';
 
 import Logo from '../logo/Logo';
 
@@ -11,7 +12,15 @@ export default function AuthLayout() {
   const isLoginPage = location.pathname === '/login';
 
   return (
-    <Grid container component="main" sx={{ height: '100vh' }}>
+    <Grid
+      container
+      component="main"
+      sx={{
+        minHeight: { md: '100vh' },
+        height: { xs: '100vh', md: 'auto' },
+        maxHeight: { xs: '-webkit-fill-available', md: 'auto' },
+      }}
+    >
       <Grid
         item
         xs={false}
