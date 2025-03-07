@@ -18,6 +18,7 @@ export default function Documents() {
       onSubmit={onSubmit}
       SubmitComponent={<Pagination />}
       onChange={onChange}
+      type="document"
     />
   );
 }
