@@ -63,6 +63,9 @@ export const tripWizardSlice = createSlice({
       state.trip.endDate = action.payload.endDate;
       state.trip.previewImage = action.payload.previewImage;
     },
+    setPreviewImage: (state, action: PayloadAction<Trip['previewImage']>) => {
+      state.trip.previewImage = action.payload;
+    },
     setLocationFrom: (state, action: PayloadAction<Trip['locationFrom']>) => {
       state.trip.locationFrom = action.payload;
     },
@@ -84,6 +87,11 @@ export const tripWizardSlice = createSlice({
     setPhotos: (state, action: PayloadAction<Trip['photos']>) => {
       state.trip.photos = action.payload;
     },
+    resetWizard: (state) => {
+      const initState = getInitialState();
+      state.currentStep = initState.currentStep;
+      state.trip = initState.trip;
+    },
   },
   extraReducers: (builder) => {
     builder.addCase(PURGE, () => {
@@ -96,6 +104,7 @@ export const {
   nextStep,
   previousStep,
   setTravelInformation,
+  setPreviewImage,
   setLocationFrom,
   setDestinations,
   setPlaces,
@@ -103,6 +112,7 @@ export const {
   setDocuments,
   setPackingLists,
   setPhotos,
+  resetWizard,
 } = tripWizardSlice.actions;
 
 export const selectCurrentStep = (state: RootState) =>
