@@ -26,6 +26,12 @@ export default function Hero() {
             intuitive web application. Start exploring now!
           </Typography>
         </Stack>
+        <Stack direction="row">
+          <AppButton sx={{ alignItems: 'center', justifyContent: 'center' }}>
+            Plan your trip <ArrowForwardIcon />
+          </AppButton>
+          <AppButton>Learn more</AppButton>
+        </Stack>
       </Stack>
     </>
   );
