@@ -1,4 +1,11 @@
-import { Avatar, AvatarGroup, Box, Stack, Typography } from '@mui/material';
+import {
+  Avatar,
+  AvatarGroup,
+  Box,
+  Grid,
+  Stack,
+  Typography,
+} from '@mui/material';
 
 import PlaneIcon from '@features/dashboard/components/Hero/PlaneIcon';
 import AppButton from '@features/ui/AppButton';
@@ -42,6 +49,65 @@ export default function Hero() {
           </AvatarGroup>
           <Typography>Track their trips in our App.</Typography>
         </Stack>
+      </Stack>
+      <Stack>
+        <Grid item xs={12} md={6} order={{ xs: 1, md: 2 }}>
+          <Box
+            sx={{
+              height: '250px',
+              borderRadius: 4,
+              overflow: 'hidden',
+              mb: 2,
+            }}
+          >
+            <Box
+              component="img"
+              src="/images/camper-van.jpg"
+              alt="Camper van in nature"
+              sx={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+              }}
+            />
+          </Box>
+          <Box
+            sx={{
+              height: '250px',
+              borderRadius: 4,
+              overflow: 'hidden',
+            }}
+          >
+            <Box
+              component="img"
+              src="/images/beach-palm.jpg"
+              alt="Beach with palm tree"
+              sx={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+              }}
+            />
+          </Box>
+          <Box
+            sx={{
+              height: '100%',
+              borderRadius: 4,
+              overflow: 'hidden',
+            }}
+          >
+            <Box
+              component="img"
+              src="/images/city-skyline.jpg"
+              alt="City skyline at sunset"
+              sx={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+              }}
+            />
+          </Box>
+        </Grid>
       </Stack>
     </>
   );
