@@ -1,4 +1,4 @@
-import { Box, Stack, Typography } from '@mui/material';
+import { Avatar, AvatarGroup, Box, Stack, Typography } from '@mui/material';
 
 import PlaneIcon from '@features/dashboard/components/Hero/PlaneIcon';
 import AppButton from '@features/ui/AppButton';
@@ -31,6 +31,16 @@ export default function Hero() {
             Plan your trip <ArrowForwardIcon />
           </AppButton>
           <AppButton>Learn more</AppButton>
+        </Stack>
+        <Stack direction="row">
+          <Typography>1200+ users</Typography>
+          <AvatarGroup>
+            <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+            <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
+            <Avatar alt="Agnes Walker" src="/static/images/avatar/4.jpg" />
+            <Avatar alt="Trevor Henderson" src="/static/images/avatar/5.jpg" />
+          </AvatarGroup>
+          <Typography>Track their trips in our App.</Typography>
         </Stack>
       </Stack>
     </>
