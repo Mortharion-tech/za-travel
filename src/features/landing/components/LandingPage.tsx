@@ -1,4 +1,5 @@
 import AppFeatures from './AppFeatures';
+import Footer from './Footer';
 import Hero from './Hero/Hero';
 
 export default function LandingPage() {
@@ -6,6 +7,7 @@ export default function LandingPage() {
     <>
       <Hero />
       <AppFeatures />
+      <Footer />
     </>
   );
 }
