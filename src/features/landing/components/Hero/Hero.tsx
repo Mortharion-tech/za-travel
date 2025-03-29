@@ -71,7 +71,7 @@ export default function Hero() {
             >
               <Box
                 component="img"
-                src="/images/camper-van.jpg"
+                src="../../assets/camping-van.jpg"
                 alt="Camper van in nature"
                 sx={{
                   width: '100%',
@@ -89,7 +89,7 @@ export default function Hero() {
             >
               <Box
                 component="img"
-                src="/images/beach-palm.jpg"
+                src="../../assets/ocean-coast.jpg"
                 alt="Beach with palm tree"
                 sx={{
                   width: '100%',
@@ -107,7 +107,7 @@ export default function Hero() {
             >
               <Box
                 component="img"
-                src="/images/city-skyline.jpg"
+                src="../../assets/city-skyline.jpg"
                 alt="City skyline at sunset"
                 sx={{
                   width: '100%',
