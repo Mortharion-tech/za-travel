@@ -16,19 +16,6 @@ export default function Hero() {
   return (
     <>
       <Stack direction="row" sx={{ width: 1720 }}>
-        <Stack
-          direction="row"
-          justifyContent="space-between"
-          alignItems="center"
-        >
-          <Box>
-            <Logo />
-          </Box>
-          <Stack direction="row" gap={2.5}>
-            <AppButton>Log in</AppButton>
-            <AppButton>Sign up</AppButton>
-          </Stack>
-        </Stack>
         <Stack>
           <PlaneIcon />
           <Stack sx={{ width: 668, height: 636 }}>
