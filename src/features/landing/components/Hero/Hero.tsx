@@ -12,6 +12,10 @@ import PlaneIcon from '@features/dashboard/components/Hero/PlaneIcon';
 import AppButton from '@features/ui/AppButton';
 import Logo from '@features/ui/logo/Logo';
 
+import campingVanImage from '../../assets/camping-van.png';
+import citySkylineImage from '../../assets/city-skyline.png';
+import oceanCoastImage from '../../assets/ocean-coast.png';
+
 export default function Hero() {
   return (
     <>
@@ -46,11 +50,12 @@ export default function Hero() {
             <Typography>Track their trips in our App.</Typography>
           </Stack>
         </Stack>
-        <Stack>
-          <Grid item xs={12} md={6} order={{ xs: 1, md: 2 }}>
+        <Grid container spacing={2}>
+          <Grid item xs={12} md={6}>
             <Box
               sx={{
-                height: '250px',
+                width: '403px',
+                height: '451px',
                 borderRadius: 4,
                 overflow: 'hidden',
                 mb: 2,
@@ -58,7 +63,7 @@ export default function Hero() {
             >
               <Box
                 component="img"
-                src="../../assets/camping-van.jpg"
+                src={campingVanImage}
                 alt="Camper van in nature"
                 sx={{
                   width: '100%',
@@ -69,14 +74,15 @@ export default function Hero() {
             </Box>
             <Box
               sx={{
-                height: '250px',
+                width: '403px',
+                height: '451px',
                 borderRadius: 4,
                 overflow: 'hidden',
               }}
             >
               <Box
                 component="img"
-                src="../../assets/ocean-coast.jpg"
+                src={oceanCoastImage}
                 alt="Beach with palm tree"
                 sx={{
                   width: '100%',
@@ -85,16 +91,20 @@ export default function Hero() {
                 }}
               />
             </Box>
+          </Grid>
+
+          <Grid item xs={12} md={6}>
             <Box
               sx={{
-                height: '100%',
+                width: '364px',
+                height: '926px',
                 borderRadius: 4,
                 overflow: 'hidden',
               }}
             >
               <Box
                 component="img"
-                src="../../assets/city-skyline.jpg"
+                src={citySkylineImage}
                 alt="City skyline at sunset"
                 sx={{
                   width: '100%',
@@ -104,7 +114,7 @@ export default function Hero() {
               />
             </Box>
           </Grid>
-        </Stack>
+        </Grid>
       </Stack>
     </>
   );
