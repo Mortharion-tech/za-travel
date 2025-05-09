@@ -1,6 +1,9 @@
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { Box, Button, Card, Container, Grid, Typography } from '@mui/material';
 
+import dashboardShowcaseImage from '../assets/dashboard-showcase.png';
+import expensesShowcaseImage from '../assets/expenses-showcase.png';
+
 export default function AppFeatures() {
   return (
     <Container maxWidth="lg">
@@ -18,7 +21,7 @@ export default function AppFeatures() {
           <Card elevation={3} sx={{ borderRadius: 2, overflow: 'hidden' }}>
             <Box
               component="img"
-              src="/path/to/dashboard-image.png"
+              src={dashboardShowcaseImage}
               alt="Dashboard interface"
               sx={{ width: '100%' }}
             />
@@ -84,7 +87,7 @@ export default function AppFeatures() {
           <Card elevation={3} sx={{ borderRadius: 2, overflow: 'hidden' }}>
             <Box
               component="img"
-              src="/path/to/expenses-image.png"
+              src={expensesShowcaseImage}
               alt="Expenses interface"
               sx={{ width: '100%' }}
             />
