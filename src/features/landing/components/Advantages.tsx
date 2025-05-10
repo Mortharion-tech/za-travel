@@ -11,6 +11,8 @@ import {
   useTheme,
 } from '@mui/material';
 
+import { Colors } from '@config/styles';
+
 export default function Advantages() {
   const theme = useTheme();
 
@@ -67,7 +69,7 @@ export default function Advantages() {
                   <Paper
                     elevation={0}
                     sx={{
-                      bgcolor: '#046AAA',
+                      bgcolor: Colors.primaryBlue,
                       color: 'white',
                       p: 2,
                       borderRadius: 2,
