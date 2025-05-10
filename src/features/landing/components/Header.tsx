@@ -11,8 +11,12 @@ export default function Header() {
           <Logo />
         </Box>
         <Stack direction="row" gap={2.5}>
-          <AppButton>Log in</AppButton>
-          <AppButton>Sign up</AppButton>
+          <AppButton variant="outlined" color="primary">
+            Log in
+          </AppButton>
+          <AppButton variant="contained" color="primary">
+            Sign up
+          </AppButton>
         </Stack>
       </Stack>
     </>
