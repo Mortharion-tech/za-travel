@@ -67,7 +67,7 @@ export default function Advantages() {
                   <Paper
                     elevation={0}
                     sx={{
-                      bgcolor: '#0277bd',
+                      bgcolor: '#046AAA',
                       color: 'white',
                       p: 2,
                       borderRadius: 2,
