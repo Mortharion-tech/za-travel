@@ -4,10 +4,12 @@ import {
   AvatarGroup,
   Box,
   Grid,
+  Link,
   Stack,
   Typography,
 } from '@mui/material';
 
+import { AppRoutes } from '@config/routes';
 import PlaneIcon from '@features/dashboard/components/Hero/PlaneIcon';
 import AppButton from '@features/ui/AppButton';
 import Logo from '@features/ui/logo/Logo';
@@ -31,10 +33,23 @@ export default function Hero() {
             </Typography>
           </Stack>
           <Stack direction="row">
-            <AppButton sx={{ alignItems: 'center', justifyContent: 'center' }}>
+            <AppButton
+              variant="contained"
+              color="primary"
+              LinkComponent={Link}
+              href={AppRoutes.addTrip}
+              sx={{ alignItems: 'center', justifyContent: 'center' }}
+            >
               Plan your trip <ArrowForwardIcon />
             </AppButton>
-            <AppButton>Learn more</AppButton>
+            <AppButton
+              variant="outlined"
+              color="primary"
+              LinkComponent={Link}
+              href={AppRoutes.login}
+            >
+              Learn more
+            </AppButton>
           </Stack>
           <Stack direction="row">
             <Typography>1200+ users</Typography>
