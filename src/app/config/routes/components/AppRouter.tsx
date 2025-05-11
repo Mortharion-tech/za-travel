@@ -24,7 +24,7 @@ export default function AppRouter() {
         {/* Public Pages */}
         <Route path={AppRoutes.home} element={<HomePage />} />
         <Route element={<AuthLayout />}>
-          <Route path={AppRoutes.singUp} element={<SignUpPage />} />
+          <Route path={AppRoutes.signUp} element={<SignUpPage />} />
           <Route path={AppRoutes.login} element={<LoginPage />} />
         </Route>
         {/* Account Pages */}
