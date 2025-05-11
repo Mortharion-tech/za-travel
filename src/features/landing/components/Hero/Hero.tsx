@@ -38,7 +38,12 @@ export default function Hero() {
               color="primary"
               LinkComponent={Link}
               href={AppRoutes.addTrip}
-              sx={{ alignItems: 'center', justifyContent: 'center' }}
+              sx={{
+                width: '326px',
+                height: '56px',
+                alignItems: 'center',
+                justifyContent: 'center',
+              }}
             >
               Plan your trip <ArrowForwardIcon />
             </AppButton>
@@ -47,6 +52,12 @@ export default function Hero() {
               color="primary"
               LinkComponent={Link}
               href={AppRoutes.login}
+              sx={{
+                width: '326px',
+                height: '56px',
+                alignItems: 'center',
+                justifyContent: 'center',
+              }}
             >
               Learn more
             </AppButton>
