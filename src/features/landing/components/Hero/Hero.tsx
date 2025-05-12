@@ -32,7 +32,7 @@ export default function Hero() {
               intuitive web application. Start exploring now!
             </Typography>
           </Stack>
-          <Stack direction="row">
+          <Stack direction="row" gap={2}>
             <AppButton
               variant="contained"
               color="primary"
