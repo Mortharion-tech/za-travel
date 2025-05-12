@@ -3,6 +3,7 @@ import {
   Avatar,
   AvatarGroup,
   Box,
+  Container,
   Grid,
   Link,
   Stack,
@@ -20,7 +21,7 @@ import oceanCoastImage from '../../assets/ocean-coast.png';
 
 export default function Hero() {
   return (
-    <>
+    <Container maxWidth="lg" sx={{ py: 8 }}>
       <Stack direction="row" sx={{ width: 1720 }}>
         <Stack>
           <PlaneIcon />
@@ -142,6 +143,6 @@ export default function Hero() {
           </Grid>
         </Grid>
       </Stack>
-    </>
+    </Container>
   );
 }
