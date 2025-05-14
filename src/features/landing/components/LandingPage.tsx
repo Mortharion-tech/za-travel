@@ -11,6 +11,7 @@ export default function LandingPage() {
   return (
     <>
       <Header />
+      <Box sx={{ height: '32px' }} />
       <Box sx={{ px: '100px' }}>
         <Hero />
         <AppFeatures />
