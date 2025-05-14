@@ -10,7 +10,14 @@ import NextTrip from './NextTrip';
 export default function LandingPage() {
   return (
     <>
-      <Container maxWidth="lg" sx={{ py: 8 }}>
+      <Container
+        disableGutters
+        sx={{
+          maxWidth: '100% !important',
+          px: '100px',
+          py: 8,
+        }}
+      >
         <Header />
         <Hero />
         <AppFeatures />
