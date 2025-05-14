@@ -6,8 +6,15 @@ import Logo from '@features/ui/logo/Logo';
 
 export default function Header() {
   return (
-    <Box sx={{ px: '100px', width: '100%' }}>
-      <Stack direction="row" justifyContent="space-between" alignItems="center">
+    <Box sx={{ px: '100px', py: '20px', width: '100%' }}>
+      <Stack
+        direction="row"
+        justifyContent="space-between"
+        alignItems="center"
+        sx={{
+          height: '60px',
+        }}
+      >
         <Box>
           <Logo />
         </Box>
