@@ -1,4 +1,4 @@
-import { Container } from '@mui/material';
+import { Box } from '@mui/material';
 
 import Advantages from './Advantages';
 import AppFeatures from './AppFeatures';
@@ -10,19 +10,12 @@ import NextTrip from './NextTrip';
 export default function LandingPage() {
   return (
     <>
-      <Container
-        disableGutters
-        sx={{
-          maxWidth: '100% !important',
-          px: '100px',
-          py: 8,
-        }}
-      >
-        <Header />
+      <Header />
+      <Box sx={{ px: '100px' }}>
         <Hero />
         <AppFeatures />
         <Advantages />
-      </Container>
+      </Box>
       <NextTrip />
       <Footer />
     </>
