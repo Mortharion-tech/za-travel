@@ -6,7 +6,7 @@ import Logo from '@features/ui/logo/Logo';
 
 export default function Header() {
   return (
-    <>
+    <Box sx={{ px: '100px', width: '100%' }}>
       <Stack direction="row" justifyContent="space-between" alignItems="center">
         <Box>
           <Logo />
@@ -30,6 +30,6 @@ export default function Header() {
           </AppButton>
         </Stack>
       </Stack>
-    </>
+    </Box>
   );
 }
