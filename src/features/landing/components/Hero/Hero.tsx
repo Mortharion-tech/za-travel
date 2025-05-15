@@ -87,74 +87,71 @@ export default function Hero() {
           </Stack>
         </Stack>
 
-        <Box sx={{ width: '791px', height: '926px' }}>
-          <Grid container spacing={3}>
-            <Grid item xs={6}>
-              <Stack spacing={3}>
-                <Box
-                  sx={{
-                    width: '403px',
-                    height: '451px',
-                    borderRadius: 4,
-                    overflow: 'hidden',
-                  }}
-                >
-                  <Box
-                    component="img"
-                    src={campingVanImage}
-                    alt="Camper van in nature"
-                    sx={{
-                      width: '100%',
-                      height: '100%',
-                      objectFit: 'cover',
-                    }}
-                  />
-                </Box>
-                <Box
-                  sx={{
-                    width: '403px',
-                    height: '451px',
-                    borderRadius: 4,
-                    overflow: 'hidden',
-                  }}
-                >
-                  <Box
-                    component="img"
-                    src={oceanCoastImage}
-                    alt="Beach with palm tree"
-                    sx={{
-                      width: '100%',
-                      height: '100%',
-                      objectFit: 'cover',
-                    }}
-                  />
-                </Box>
-              </Stack>
-            </Grid>
-
-            <Grid item xs={12} md={6}>
+        <Box
+          sx={{ width: '791px', height: '926px', display: 'flex', gap: '24px' }}
+        >
+          {/* Left column with two images */}
+          <Box sx={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+            <Box
+              sx={{
+                width: '403px',
+                height: '451px',
+                borderRadius: 4,
+                overflow: 'hidden',
+              }}
+            >
               <Box
+                component="img"
+                src={campingVanImage}
+                alt="Camper van in nature"
                 sx={{
-                  width: '364px',
-                  height: '926px',
-                  borderTopRightRadius: 4,
-                  borderBottomRightRadius: 4,
-                  overflow: 'hidden',
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover',
                 }}
-              >
-                <Box
-                  component="img"
-                  src={citySkylineImage}
-                  alt="City skyline at sunset"
-                  sx={{
-                    width: '100%',
-                    height: '100%',
-                    objectFit: 'cover',
-                  }}
-                />
-              </Box>
-            </Grid>
-          </Grid>
+              />
+            </Box>
+            <Box
+              sx={{
+                width: '403px',
+                height: '451px',
+                borderRadius: 4,
+                overflow: 'hidden',
+              }}
+            >
+              <Box
+                component="img"
+                src={oceanCoastImage}
+                alt="Beach with palm tree"
+                sx={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover',
+                }}
+              />
+            </Box>
+          </Box>
+
+          {/* Right image */}
+          <Box
+            sx={{
+              width: '364px',
+              height: '926px',
+              borderRadius: 4,
+              overflow: 'hidden',
+            }}
+          >
+            <Box
+              component="img"
+              src={citySkylineImage}
+              alt="City skyline at sunset"
+              sx={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+              }}
+            />
+          </Box>
         </Box>
       </Stack>
     </Box>
