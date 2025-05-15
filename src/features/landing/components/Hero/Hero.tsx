@@ -3,7 +3,6 @@ import {
   Avatar,
   AvatarGroup,
   Box,
-  Grid,
   Link,
   Stack,
   Typography,
@@ -21,35 +20,41 @@ export default function Hero() {
   return (
     <Box sx={{ width: '100%', maxWidth: '1720px', mx: 'auto' }}>
       <Stack direction="row" justifyContent="space-between" spacing={4}>
-        {/* Left content with exact dimensions */}
         <Box
           sx={{
             width: '668px',
             height: '636px',
             display: 'flex',
             flexDirection: 'column',
-            justifyContent: 'space-between',
+            position: 'relative',
+            py: 8,
           }}
         >
-          {/* Frame 1 - Top content */}
-          <Box sx={{ pt: 8 }}>
-            <Box sx={{ mb: 4 }}>
+          <Box>
+            <Box sx={{ mb: 5 }}>
               <PlaneIcon />
             </Box>
 
             <Typography
               variant="h1"
-              sx={{ mb: 3, fontSize: '42px', fontWeight: 'bold' }}
+              sx={{
+                mb: 3,
+                fontSize: '42px',
+                fontWeight: 'bold',
+                color: '#1e3a5f',
+              }}
             >
               Your Ultimate Trip Companion
             </Typography>
+
             <Typography
               variant="body1"
               sx={{
-                mb: 5,
+                mb: 10,
                 fontSize: '16px',
                 color: '#4a5568',
                 maxWidth: '600px',
+                lineHeight: 1.6,
               }}
             >
               Welcome to ZaTravel - Your Passport to Seamless Adventures!
@@ -57,7 +62,7 @@ export default function Hero() {
               intuitive web application. Start exploring now!
             </Typography>
 
-            <Stack direction="row" gap={2}>
+            <Stack direction="row" gap={2} sx={{ mb: 18 }}>
               <AppButton
                 variant="contained"
                 color="primary"
@@ -89,8 +94,16 @@ export default function Hero() {
             </Stack>
           </Box>
 
-          {/* Frame 2 - Bottom content - pushed to the bottom */}
-          <Box sx={{ mb: 5 }}>
+          <Box
+            sx={{
+              position: 'absolute',
+              bottom: 32,
+              left: 0,
+              width: '100%',
+              py: 3,
+              borderTop: '1px solid rgba(0, 0, 0, 0.1)',
+            }}
+          >
             <Stack direction="row" alignItems="center" spacing={2}>
               <Typography
                 variant="body2"
@@ -128,11 +141,9 @@ export default function Hero() {
           </Box>
         </Box>
 
-        {/* Right content - images section - already properly structured */}
         <Box
           sx={{ width: '791px', height: '926px', display: 'flex', gap: '24px' }}
         >
-          {/* Left column with two images */}
           <Box sx={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
             <Box
               sx={{
@@ -174,7 +185,6 @@ export default function Hero() {
             </Box>
           </Box>
 
-          {/* Right image */}
           <Box
             sx={{
               width: '364px',
