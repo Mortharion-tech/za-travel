@@ -136,7 +136,8 @@ export default function Hero() {
                 sx={{
                   width: '364px',
                   height: '926px',
-                  borderRadius: 4,
+                  borderTopRightRadius: 4,
+                  borderBottomRightRadius: 4,
                   overflow: 'hidden',
                 }}
               >
