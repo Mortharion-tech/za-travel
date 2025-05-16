@@ -4,7 +4,6 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import {
   Box,
   Container,
-  Grid,
   Paper,
   Stack,
   Typography,
@@ -38,61 +37,114 @@ export default function Advantages() {
   ];
 
   return (
-    <Container maxWidth="lg" sx={{ py: 8 }}>
+    <Container
+      sx={{
+        width: '1720px',
+        height: '465px',
+        maxWidth: 'none',
+        py: 0,
+      }}
+    >
       <Box
         sx={{
-          p: 4,
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
         }}
       >
-        <Stack spacing={6}>
-          <Box textAlign="center">
+        <Stack spacing={8} alignItems="center">
+          <Box
+            sx={{
+              width: '331px',
+              height: '105px',
+              textAlign: 'center',
+            }}
+          >
             <Typography
               variant="subtitle1"
               color="primary"
               component="div"
               gutterBottom
+              sx={{ textTransform: 'uppercase' }}
             >
-              ADVANTAGES
+              Advantages
             </Typography>
-            <Typography variant="h3" component="h2" color="text.primary">
+            <Typography variant="h2" component="h2" color="text.primary">
               Why choose us?
             </Typography>
           </Box>
-
-          <Grid container spacing={4} justifyContent="center">
+          <Box
+            sx={{
+              display: 'flex',
+              width: '1506px',
+              height: '296px',
+              justifyContent: 'space-between',
+            }}
+          >
             {advantages.map((item, index) => (
-              <Grid item xs={12} md={4} key={index}>
-                <Stack alignItems="center" spacing={2} textAlign="center">
+              <Box
+                key={index}
+                sx={{
+                  width: '446px',
+                  height: '296px',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                }}
+              >
+                <Stack alignItems="center" spacing={2}>
                   <Paper
                     elevation={0}
                     sx={{
                       bgcolor: Colors.primaryBlue,
                       color: 'white',
                       p: 2,
-                      borderRadius: 2,
+                      borderRadius: 1,
                       display: 'flex',
                       justifyContent: 'center',
                       alignItems: 'center',
-                      width: 56,
-                      height: 56,
+                      width: 64,
+                      height: 64,
+                      '& svg': {
+                        fontSize: '44px',
+                      },
                     }}
                   >
                     {item.icon}
                   </Paper>
-                  <Typography variant="h6" component="h3">
-                    {item.title}
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    color="text.secondary"
-                    sx={{ maxWidth: 300 }}
+                  <Box
+                    sx={{
+                      width: '382px',
+                      gap: '16px',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      alignItems: 'center',
+                      textAlign: 'center',
+                    }}
                   >
-                    {item.description}
-                  </Typography>
+                    <Typography
+                      variant="h6"
+                      component="h3"
+                      sx={{
+                        fontWeight: 600,
+                      }}
+                    >
+                      {item.title}
+                    </Typography>
+                    <Typography
+                      variant="body2"
+                      color="text.secondary"
+                      sx={{
+                        maxWidth: '380px',
+                      }}
+                    >
+                      {item.description}
+                    </Typography>
+                  </Box>
                 </Stack>
-              </Grid>
+              </Box>
             ))}
-          </Grid>
+          </Box>
         </Stack>
       </Box>
     </Container>
