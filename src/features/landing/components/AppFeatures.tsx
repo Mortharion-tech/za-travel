@@ -139,11 +139,17 @@ export default function AppFeatures() {
               Travel with confidence, knowing that your expenses are
               well-managed and under control.
             </Typography>
-            <Button
+            <AppButton
               variant="contained"
               color="primary"
+              LinkComponent={Link}
+              href={AppRoutes.addTrip}
               endIcon={<ArrowForwardIcon />}
               sx={{
+                width: '50%',
+                height: '56px',
+                alignItems: 'center',
+                justifyContent: 'center',
                 mt: 2,
                 px: 3,
                 py: 1.2,
@@ -154,7 +160,7 @@ export default function AppFeatures() {
               }}
             >
               Plan your trip
-            </Button>
+            </AppButton>
           </Box>
         </Grid>
         <Grid item xs={12} md={6}>
