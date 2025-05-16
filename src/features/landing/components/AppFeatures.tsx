@@ -1,5 +1,16 @@
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import { Box, Button, Card, Container, Grid, Typography } from '@mui/material';
+import {
+  Box,
+  Button,
+  Card,
+  Container,
+  Grid,
+  Link,
+  Typography,
+} from '@mui/material';
+
+import { AppRoutes } from '@config/routes';
+import AppButton from '@features/ui/AppButton';
 
 import dashboardShowcaseImage from '../assets/dashboard-showcase.png';
 import expensesShowcaseImage from '../assets/expenses-showcase.png';
@@ -65,11 +76,17 @@ export default function AppFeatures() {
               tap away. Enjoy a clutter-free travel experience and stay in
               control of your adventures with ease.
             </Typography>
-            <Button
+            <AppButton
               variant="contained"
               color="primary"
+              LinkComponent={Link}
+              href={AppRoutes.addTrip}
               endIcon={<ArrowForwardIcon />}
               sx={{
+                width: '50%',
+                height: '56px',
+                alignItems: 'center',
+                justifyContent: 'center',
                 mt: 2,
                 px: 3,
                 py: 1.2,
@@ -80,7 +97,7 @@ export default function AppFeatures() {
               }}
             >
               Plan your trip
-            </Button>
+            </AppButton>
           </Box>
         </Grid>
       </Grid>
