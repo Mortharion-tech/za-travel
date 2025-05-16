@@ -41,9 +41,6 @@ export default function Advantages() {
     <Container maxWidth="lg" sx={{ py: 8 }}>
       <Box
         sx={{
-          border: '1px solid',
-          borderColor: theme.palette.divider,
-          borderRadius: 2,
           p: 4,
         }}
       >
