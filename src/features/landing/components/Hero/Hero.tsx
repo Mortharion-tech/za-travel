@@ -82,6 +82,7 @@ export default function Hero() {
               color="primary"
               LinkComponent={Link}
               href={AppRoutes.addTrip}
+              endIcon={<ArrowForwardIcon />}
               sx={{
                 width: '50%',
                 height: '56px',
@@ -89,7 +90,7 @@ export default function Hero() {
                 justifyContent: 'center',
               }}
             >
-              Plan your trip <ArrowForwardIcon />
+              Plan your trip
             </AppButton>
             <AppButton
               variant="outlined"
