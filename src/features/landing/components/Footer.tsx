@@ -10,6 +10,8 @@ import {
   useTheme,
 } from '@mui/material';
 
+import Logo from '@features/ui/logo/Logo';
+
 export default function Footer() {
   const theme = useTheme();
 
@@ -26,29 +28,7 @@ export default function Footer() {
         <Stack direction="column" alignItems="center" spacing={2}>
           {/* Logo */}
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
-            <Box
-              component="svg"
-              width={24}
-              height={24}
-              viewBox="0 0 24 24"
-              fill="none"
-              sx={{ mr: 1, color: '#6a994e' }}
-            >
-              <path
-                d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"
-                fill="currentColor"
-              />
-            </Box>
-            <Typography
-              variant="h6"
-              component="span"
-              sx={{
-                fontWeight: 600,
-                color: 'text.primary',
-              }}
-            >
-              ZaTravel
-            </Typography>
+            <Logo />
           </Box>
 
           {/* Contact Info */}
