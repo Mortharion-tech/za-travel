@@ -61,7 +61,7 @@ export default function Footer() {
             contact@zatravel.com
           </Typography>
 
-          <Stack direction="row" spacing={2} sx={{ color: '#6a994e' }}>
+          <Stack direction="row" spacing={1.25} sx={{ color: '#6a994e' }}>
             <Link
               href="#"
               aria-label="Instagram"
@@ -70,18 +70,18 @@ export default function Footer() {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                width: 36,
-                height: 36,
-                borderRadius: '50%',
-                border: '1px solid',
-                borderColor: 'divider',
+                width: 32,
+                height: 32,
+                borderRadius: '4px',
+                bgcolor: 'rgba(106, 153, 78, 0.1)',
+                padding: '4px',
                 transition: 'all 0.2s',
                 '&:hover': {
-                  bgcolor: 'rgba(106, 153, 78, 0.1)',
+                  bgcolor: 'rgba(106, 153, 78, 0.2)',
                 },
               }}
             >
-              <InstagramIcon fontSize="small" />
+              <InstagramIcon sx={{ fontSize: 24 }} />
             </Link>
             <Link
               href="#"
@@ -91,18 +91,18 @@ export default function Footer() {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                width: 36,
-                height: 36,
-                borderRadius: '50%',
-                border: '1px solid',
-                borderColor: 'divider',
+                width: 32,
+                height: 32,
+                borderRadius: '4px',
+                bgcolor: 'rgba(106, 153, 78, 0.1)',
+                padding: '4px',
                 transition: 'all 0.2s',
                 '&:hover': {
-                  bgcolor: 'rgba(106, 153, 78, 0.1)',
+                  bgcolor: 'rgba(106, 153, 78, 0.2)',
                 },
               }}
             >
-              <FacebookIcon fontSize="small" />
+              <FacebookIcon sx={{ fontSize: 24 }} />
             </Link>
             <Link
               href="#"
@@ -112,18 +112,18 @@ export default function Footer() {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                width: 36,
-                height: 36,
-                borderRadius: '50%',
-                border: '1px solid',
-                borderColor: 'divider',
+                width: 32,
+                height: 32,
+                borderRadius: '4px',
+                bgcolor: 'rgba(106, 153, 78, 0.1)',
+                padding: '4px',
                 transition: 'all 0.2s',
                 '&:hover': {
-                  bgcolor: 'rgba(106, 153, 78, 0.1)',
+                  bgcolor: 'rgba(106, 153, 78, 0.2)',
                 },
               }}
             >
-              <TwitterIcon fontSize="small" />
+              <TwitterIcon sx={{ fontSize: 24 }} />
             </Link>
           </Stack>
         </Stack>
