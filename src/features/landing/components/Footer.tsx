@@ -26,12 +26,9 @@ export default function Footer() {
     >
       <Container maxWidth="lg">
         <Stack direction="column" alignItems="center" spacing={2}>
-          {/* Logo */}
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
             <Logo />
           </Box>
-
-          {/* Contact Info */}
           <Box sx={{ textAlign: 'center' }}>
             <Typography
               variant="subtitle1"
@@ -50,7 +47,6 @@ export default function Footer() {
             </Typography>
           </Box>
 
-          {/* Email */}
           <Typography
             variant="body1"
             component="a"
@@ -65,7 +61,6 @@ export default function Footer() {
             contact@zatravel.com
           </Typography>
 
-          {/* Social Media Icons */}
           <Stack direction="row" spacing={2} sx={{ color: '#6a994e' }}>
             <Link
               href="#"
