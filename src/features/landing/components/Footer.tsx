@@ -10,6 +10,7 @@ import {
   useTheme,
 } from '@mui/material';
 
+import { Colors } from '@config/styles';
 import Logo from '@features/ui/logo/Logo';
 
 export default function Footer() {
@@ -61,7 +62,11 @@ export default function Footer() {
             contact@zatravel.com
           </Typography>
 
-          <Stack direction="row" spacing={1.25} sx={{ color: '#6a994e' }}>
+          <Stack
+            direction="row"
+            spacing={1.25}
+            sx={{ color: Colors.primaryGreen }}
+          >
             <Link
               href="#"
               aria-label="Instagram"
@@ -73,7 +78,7 @@ export default function Footer() {
                 width: 32,
                 height: 32,
                 borderRadius: '4px',
-                bgcolor: 'rgba(106, 153, 78, 0.1)',
+                bgcolor: Colors.secondaryGreen,
                 padding: '4px',
                 transition: 'all 0.2s',
                 '&:hover': {
@@ -94,7 +99,7 @@ export default function Footer() {
                 width: 32,
                 height: 32,
                 borderRadius: '4px',
-                bgcolor: 'rgba(106, 153, 78, 0.1)',
+                bgcolor: Colors.secondaryGreen,
                 padding: '4px',
                 transition: 'all 0.2s',
                 '&:hover': {
@@ -115,7 +120,7 @@ export default function Footer() {
                 width: 32,
                 height: 32,
                 borderRadius: '4px',
-                bgcolor: 'rgba(106, 153, 78, 0.1)',
+                bgcolor: Colors.secondaryGreen,
                 padding: '4px',
                 transition: 'all 0.2s',
                 '&:hover': {
