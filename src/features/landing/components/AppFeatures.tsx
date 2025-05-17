@@ -1,13 +1,5 @@
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import {
-  Box,
-  Button,
-  Card,
-  Container,
-  Grid,
-  Link,
-  Typography,
-} from '@mui/material';
+import { Box, Card, Container, Grid, Link, Typography } from '@mui/material';
 
 import { AppRoutes } from '@config/routes';
 import AppButton from '@features/ui/AppButton';
