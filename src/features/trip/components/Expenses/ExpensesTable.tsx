@@ -41,7 +41,7 @@ export default function ExpensesTable({
   }, [expenses, autoScrollOnChange]);
 
   return (
-    <TableContainer>
+    <TableContainer sx={{ overflowX: 'auto', width: '100%' }}>
       <Table aria-label="Expenses Table">
         <TableHead>
           <TableRow>
