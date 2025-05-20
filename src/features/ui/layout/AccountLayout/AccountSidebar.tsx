@@ -69,9 +69,11 @@ export default function AccountSidebar({ isMinimized, onClose }: Props) {
           justifyContent={isMinimized ? 'center' : 'flex-start'}
         >
           <Avatar sx={{ height: 48, width: 48, background: Colors.disabled }}>
-            {/* {userInitial} */}B
+            {userInitial}
           </Avatar>
-          {!isMinimized && <Typography variant="body1">Björn</Typography>}
+          {!isMinimized && (
+            <Typography variant="body1">{user?.displayName}</Typography>
+          )}
         </Stack>
         <List>
           {ACCOUNT_LINKS.map(({ Icon, text, path }) => (
