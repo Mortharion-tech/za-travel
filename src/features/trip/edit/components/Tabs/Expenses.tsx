@@ -47,7 +47,20 @@ export default function Expenses({ trip, onUpdate }: Props) {
 
   return (
     <Stack gap={{ xs: 1, md: 2 }}>
-      <Stack direction="row" gap={2} sx={{ overflowX: 'scroll' }} pb={1}>
+      <Stack
+        direction="row"
+        gap={2}
+        sx={{
+          overflowX: 'auto', // Changed from 'scroll' to 'auto'
+          msOverflowStyle: 'none', // Hide scrollbar in IE/Edge
+          scrollbarWidth: 'none', // Hide scrollbar in Firefox
+          '&::-webkit-scrollbar': {
+            // Hide scrollbar in Chrome/Safari
+            display: 'none',
+          },
+        }}
+        pb={1}
+      >
         {Object.entries(groupedExpenses).map(([category, amount]) => {
           const castedCategory = category as ExpenseCategory;
           const iconInfo = EXPENSE_ICON_BY_CATEGORY[castedCategory];
