@@ -66,7 +66,7 @@ export default function TripInfoAndPlaces(props: Props) {
                   maxDate={formValues.endDate}
                   sx={{
                     svg: { color: Colors.secondaryBlue },
-                    maxWidth: { md: 150 },
+                    maxWidth: { md: 160 },
                   }}
                 />
                 <DateSelectInput
@@ -77,7 +77,7 @@ export default function TripInfoAndPlaces(props: Props) {
                   minDate={formValues.startDate}
                   sx={{
                     svg: { color: Colors.secondaryBlue },
-                    maxWidth: { md: 150 },
+                    maxWidth: { md: 160 },
                   }}
                 />
                 <Stack gap={0.5} sx={{ display: { xs: 'none', md: 'flex' } }}>
