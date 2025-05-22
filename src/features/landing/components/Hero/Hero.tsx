@@ -1,4 +1,3 @@
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import {
   Avatar,
   AvatarGroup,
@@ -15,80 +14,82 @@ import AppButton from '@features/ui/AppButton';
 import campingVanImage from '../../assets/camping-van.png';
 import citySkylineImage from '../../assets/city-skyline.png';
 import oceanCoastImage from '../../assets/ocean-coast.png';
+import planeIconImage from '../../assets/plane-icon.png';
+import planePathImage from '../../assets/plane-path.png';
 
 export default function Hero() {
   return (
-    <Box sx={{ width: '100%', maxWidth: '1720px', mx: 'auto' }}>
+    <Box
+      sx={{
+        position: 'relative',
+        width: '100%',
+        maxWidth: '1720px',
+        mx: 'auto',
+        overflow: 'hidden', // Prevents background overflow
+      }}
+    >
+      {/* Background images */}
+      <Box
+        component="img"
+        src={planePathImage}
+        alt="Plane path"
+        sx={{
+          position: 'absolute',
+          top: '-80px', // Fine-tune based on mockup alignment
+          left: '-100px',
+          width: '1200px',
+          zIndex: -1,
+          pointerEvents: 'none',
+        }}
+      />
+      <Box
+        component="img"
+        src={planeIconImage}
+        alt="Plane icon"
+        sx={{
+          position: 'absolute',
+          bottom: '40px',
+          right: '40px',
+          width: '100px',
+          zIndex: -1,
+          pointerEvents: 'none',
+        }}
+      />
+
+      {/* Main layout */}
       <Stack direction="row" justifyContent="space-between" spacing={4}>
         <Box
           sx={{
             width: '668px',
-            height: '636px',
-            position: 'relative',
+            px: 4,
+            py: 5,
             borderRadius: 2,
           }}
         >
-          <Box
-            sx={{
-              position: 'absolute',
-              top: '80px',
-              left: '32px',
-              right: '32px',
-            }}
+          <PlaneIcon />
+
+          <Typography
+            variant="h1"
+            sx={{ mt: 4, fontSize: '60px', fontWeight: 700 }}
           >
-            <PlaneIcon />
+            Your Ultimate Trip Companion
+          </Typography>
 
-            <Typography
-              variant="h1"
-              sx={{
-                mt: 4,
-                color: '#375D81',
-                fontSize: '42px',
-                fontWeight: 'bold',
-                lineHeight: 1.2,
-              }}
-            >
-              Your Ultimate Trip Companion
-            </Typography>
-
-            <Typography
-              variant="body1"
-              sx={{
-                mt: 2,
-                color: '#4A5568',
-                fontSize: '16px',
-                lineHeight: 1.6,
-                maxWidth: '560px',
-              }}
-            >
-              Welcome to ZaTravel - Your Passport to Seamless Adventures!
-              Discover, plan, and track your journeys effortlessly with our
-              intuitive web application. Start exploring now!
-            </Typography>
-          </Box>
-
-          <Box
-            sx={{
-              position: 'absolute',
-              left: '32px',
-              right: '32px',
-              top: '340px',
-              display: 'flex',
-              gap: 2,
-            }}
+          <Typography
+            variant="body1"
+            sx={{ mt: 2, color: '#4A5568', fontSize: '16px' }}
           >
+            Welcome to ZaTravel - Your Passport to Seamless Adventures!
+            Discover, plan, and track your journeys effortlessly with our
+            intuitive web application. Start exploring now!
+          </Typography>
+
+          <Box sx={{ display: 'flex', gap: 2, mt: 4 }}>
             <AppButton
               variant="contained"
               color="primary"
               LinkComponent={Link}
               href={AppRoutes.addTrip}
-              endIcon={<ArrowForwardIcon />}
-              sx={{
-                width: '50%',
-                height: '56px',
-                alignItems: 'center',
-                justifyContent: 'center',
-              }}
             >
               Plan your trip
             </AppButton>
@@ -97,12 +98,6 @@ export default function Hero() {
               color="primary"
               LinkComponent={Link}
               href={AppRoutes.login}
-              sx={{
-                width: '50%',
-                height: '56px',
-                alignItems: 'center',
-                justifyContent: 'center',
-              }}
             >
               Learn more
             </AppButton>
@@ -110,38 +105,20 @@ export default function Hero() {
 
           <Box
             sx={{
-              position: 'absolute',
-              bottom: 0,
-              left: 0,
-              right: 0,
-              height: '80px',
+              mt: 4,
+              pt: 2,
+              borderTop: '1px solid rgba(0, 0, 0, 0.08)',
               display: 'flex',
               alignItems: 'center',
-              px: 4,
-              borderTop: '1px solid rgba(0, 0, 0, 0.08)',
+              gap: 2,
             }}
           >
-            <Typography variant="body1" fontWeight="medium" sx={{ mr: 2 }}>
-              1200+ users
-            </Typography>
-            <AvatarGroup
-              max={4}
-              sx={{
-                mr: 2,
-                '& .MuiAvatar-root': {
-                  width: 32,
-                  height: 32,
-                  border: '2px solid white',
-                },
-              }}
-            >
-              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-              <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
-              <Avatar alt="Agnes Walker" src="/static/images/avatar/4.jpg" />
-              <Avatar
-                alt="Trevor Henderson"
-                src="/static/images/avatar/5.jpg"
-              />
+            <Typography fontWeight="medium">1200+ users</Typography>
+            <AvatarGroup max={4}>
+              <Avatar src="/static/images/avatar/1.jpg" />
+              <Avatar src="/static/images/avatar/2.jpg" />
+              <Avatar src="/static/images/avatar/4.jpg" />
+              <Avatar src="/static/images/avatar/5.jpg" />
             </AvatarGroup>
             <Typography variant="body2" color="text.secondary">
               Track their trips in our App.
@@ -150,9 +127,20 @@ export default function Hero() {
         </Box>
 
         <Box
-          sx={{ width: '791px', height: '926px', display: 'flex', gap: '24px' }}
+          sx={{
+            width: '791px',
+            height: '926px',
+            display: 'flex',
+            gap: '24px',
+          }}
         >
-          <Box sx={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+          <Box
+            sx={{
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '24px',
+            }}
+          >
             <Box
               sx={{
                 width: '403px',
