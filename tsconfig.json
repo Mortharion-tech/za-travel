@@ -26,8 +26,10 @@
       "@pages/*": ["src/pages/*"],
       "@features/*": ["src/features/*"],
       "@config/*": ["src/app/config/*"],
-      "@store/*": ["src/app/store /*"],
-      "@services/*": ["src/app/services /*"],
+      "@store/*": ["src/app/store/*"],
+      "@store/index": ["src/app/store/index"],
+      "@store/index.ts": ["src/app/store/index.ts"],
+      "@services/*": ["src/app/services/*"],
       "@hooks/*": ["src/app/hooks/*"]
     }
   },
