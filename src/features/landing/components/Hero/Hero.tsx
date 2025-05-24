@@ -14,8 +14,6 @@ import AppButton from '@features/ui/AppButton';
 import campingVanImage from '../../assets/camping-van.png';
 import citySkylineImage from '../../assets/city-skyline.png';
 import oceanCoastImage from '../../assets/ocean-coast.png';
-import planeIconImage from '../../assets/plane-icon.png';
-import planePathImage from '../../assets/plane-path.png';
 import planeImage from '../../assets/plane.png';
 
 export default function Hero() {
@@ -35,9 +33,10 @@ export default function Hero() {
         alt="Plane path"
         sx={{
           position: 'absolute',
-          top: '-80px',
+          top: '-60px',
           left: '-100px',
-          width: '1200px',
+          width: '761px',
+          height: '160px',
           zIndex: -1,
           pointerEvents: 'none',
         }}
