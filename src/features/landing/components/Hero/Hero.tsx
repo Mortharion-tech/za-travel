@@ -16,6 +16,7 @@ import citySkylineImage from '../../assets/city-skyline.png';
 import oceanCoastImage from '../../assets/ocean-coast.png';
 import planeIconImage from '../../assets/plane-icon.png';
 import planePathImage from '../../assets/plane-path.png';
+import planeImage from '../../assets/plane.png';
 
 export default function Hero() {
   return (
@@ -30,26 +31,13 @@ export default function Hero() {
     >
       <Box
         component="img"
-        src={planePathImage}
+        src={planeImage}
         alt="Plane path"
         sx={{
           position: 'absolute',
           top: '-80px',
           left: '-100px',
           width: '1200px',
-          zIndex: -1,
-          pointerEvents: 'none',
-        }}
-      />
-      <Box
-        component="img"
-        src={planeIconImage}
-        alt="Plane icon"
-        sx={{
-          position: 'absolute',
-          bottom: '40px',
-          right: '40px',
-          width: '100px',
           zIndex: -1,
           pointerEvents: 'none',
         }}
