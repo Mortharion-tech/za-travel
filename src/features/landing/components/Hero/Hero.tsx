@@ -25,17 +25,16 @@ export default function Hero() {
         width: '100%',
         maxWidth: '1720px',
         mx: 'auto',
-        overflow: 'hidden', // Prevents background overflow
+        overflow: 'hidden',
       }}
     >
-      {/* Background images */}
       <Box
         component="img"
         src={planePathImage}
         alt="Plane path"
         sx={{
           position: 'absolute',
-          top: '-80px', // Fine-tune based on mockup alignment
+          top: '-80px',
           left: '-100px',
           width: '1200px',
           zIndex: -1,
@@ -56,7 +55,6 @@ export default function Hero() {
         }}
       />
 
-      {/* Main layout */}
       <Stack direction="row" justifyContent="space-between" spacing={4}>
         <Box
           sx={{
