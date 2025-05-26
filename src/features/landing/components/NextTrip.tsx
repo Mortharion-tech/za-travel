@@ -1,13 +1,16 @@
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import { Box, Button, Container, Typography, useTheme } from '@mui/material';
+import { Box, Button, Container, Typography } from '@mui/material';
+
+import { Colors, FontWeights } from '@config/styles';
 
 export default function NextTrip() {
-  const theme = useTheme();
-
   return (
     <Box
+      alignContent="center"
+      width="1920px"
+      height="384px"
       sx={{
-        backgroundColor: '#e8efe1',
+        backgroundColor: '#92B5582B',
         position: 'relative',
         py: 8,
         overflow: 'hidden',
@@ -29,8 +32,10 @@ export default function NextTrip() {
             variant="h3"
             component="h2"
             sx={{
-              color: '#6a994e',
-              fontWeight: 500,
+              color: Colors.primaryGreen,
+              fontWeight: FontWeights.medium,
+              lineHeight: '55px',
+              letterSpacing: '0.15px',
               mb: 4,
             }}
           >
@@ -41,7 +46,7 @@ export default function NextTrip() {
             variant="contained"
             endIcon={<ArrowForwardIcon />}
             sx={{
-              bgcolor: '#6a994e',
+              bgcolor: Colors.primaryGreen,
               color: 'white',
               px: 4,
               py: 1.5,
