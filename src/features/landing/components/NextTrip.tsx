@@ -3,6 +3,8 @@ import { Box, Button, Container, Typography } from '@mui/material';
 
 import { Colors, FontWeights } from '@config/styles';
 
+import planeImage from '../assets/plane.png';
+
 export default function NextTrip() {
   return (
     <Box
@@ -16,6 +18,20 @@ export default function NextTrip() {
         overflow: 'hidden',
       }}
     >
+      <Box
+        component="img"
+        src={planeImage}
+        alt="Plane path"
+        sx={{
+          position: 'absolute',
+          bottom: '40px',
+          left: '-100px',
+          width: '761px',
+          height: '160px',
+          zIndex: -1,
+          pointerEvents: 'none',
+        }}
+      />
       <Container maxWidth="lg">
         <Box
           sx={{
