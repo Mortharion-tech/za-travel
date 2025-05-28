@@ -4,7 +4,7 @@ import Advantages from './Advantages';
 import AppFeatures from './AppFeatures';
 import Footer from './Footer';
 import Header from './Header';
-import Hero from './Hero/Hero';
+import DesktopHero from './Hero/DesktopHero';
 import NextTrip from './NextTrip';
 
 export default function DesktopLandingPage() {
@@ -13,7 +13,7 @@ export default function DesktopLandingPage() {
       <Header />
       <Box sx={{ height: '32px' }} />
       <Box sx={{ px: '100px' }}>
-        <Hero />
+        <DesktopHero />
         <AppFeatures />
         <Advantages />
       </Box>
