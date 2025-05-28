@@ -6,7 +6,7 @@ import Advantages from './Advantages';
 import AppFeatures from './AppFeatures';
 import Footer from './Footer';
 import Header from './Header';
-import Hero from './Hero/Hero';
+import MobileHero from './Hero/MobileHero';
 import NextTrip from './NextTrip';
 
 export default function MobileLandingPage() {
@@ -16,11 +16,11 @@ export default function MobileLandingPage() {
       <Box
         component="img"
         src={camperMobileImage}
-        alt="Plane path"
+        alt="Camping Van"
         height="384px"
       />
       <Box sx={{ px: '100px' }}>
-        <Hero />
+        <MobileHero />
         <AppFeatures />
         <Advantages />
       </Box>
