@@ -26,8 +26,8 @@ export default function NextTrip() {
           position: 'absolute',
           bottom: '0px',
           right: '0px',
-          width: '761px',
-          height: '160px',
+          width: '698px',
+          height: '361px',
           zIndex: -1,
           pointerEvents: 'none',
         }}
@@ -67,6 +67,7 @@ export default function NextTrip() {
               px: 4,
               py: 1.5,
               borderRadius: 1,
+              width: '382px',
               '&:hover': {
                 bgcolor: '#598b3e',
               },
