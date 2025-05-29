@@ -9,7 +9,7 @@ export default function NextTrip() {
   return (
     <Box
       alignContent="center"
-      width="1920px"
+      width="100%"
       height="384px"
       sx={{
         backgroundColor: '#92B5582B',
