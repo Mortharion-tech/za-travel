@@ -18,6 +18,7 @@ export default function MobileLandingPage() {
         src={camperMobileImage}
         alt="Camping Van"
         height="384px"
+        width="100%"
         sx={{ px: '15px' }}
       />
       <Box sx={{ px: '100px' }}>
