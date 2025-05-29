@@ -24,7 +24,7 @@ export default function Hero() {
       <Stack direction="row" justifyContent="space-between" spacing={4}>
         <Box
           sx={{
-            width: '668px',
+            width: '100%',
             px: 4,
             py: 5,
             borderRadius: 2,
