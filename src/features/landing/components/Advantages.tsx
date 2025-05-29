@@ -39,10 +39,11 @@ export default function Advantages() {
   return (
     <Container
       sx={{
-        width: '1720px',
-        height: '465px',
-        maxWidth: 'none',
-        py: 0,
+        width: { xs: '100%', lg: '1720px' },
+        height: { xs: 'auto', lg: '465px' },
+        maxWidth: { xs: '100%', lg: 'none' },
+        py: { xs: 4, lg: 0 },
+        px: { xs: 2, lg: 0 },
       }}
     >
       <Box
@@ -52,11 +53,11 @@ export default function Advantages() {
           alignItems: 'center',
         }}
       >
-        <Stack spacing={8} alignItems="center">
+        <Stack spacing={{ xs: 4, lg: 8 }} alignItems="center">
           <Box
             sx={{
-              width: '331px',
-              height: '105px',
+              width: { xs: '100%', lg: '331px' },
+              height: { xs: 'auto', lg: '105px' },
               textAlign: 'center',
             }}
           >
@@ -76,20 +77,24 @@ export default function Advantages() {
           <Box
             sx={{
               display: 'flex',
-              width: '1506px',
-              height: '296px',
-              justifyContent: 'space-between',
+              flexDirection: { xs: 'column', lg: 'row' },
+              width: { xs: '100%', lg: '1506px' },
+              height: { xs: 'auto', lg: '296px' },
+              justifyContent: { xs: 'center', lg: 'space-between' },
+              gap: { xs: 4, lg: 0 },
             }}
           >
             {advantages.map((item, index) => (
               <Box
                 key={index}
                 sx={{
-                  width: '446px',
-                  height: '296px',
+                  width: { xs: '100%', lg: '446px' },
+                  height: { xs: 'auto', lg: '296px' },
                   display: 'flex',
                   flexDirection: 'column',
                   alignItems: 'center',
+                  maxWidth: { xs: '400px', lg: '446px' },
+                  mx: { xs: 'auto', lg: 0 },
                 }}
               >
                 <Stack alignItems="center" spacing={2}>
@@ -114,7 +119,7 @@ export default function Advantages() {
                   </Paper>
                   <Box
                     sx={{
-                      width: '382px',
+                      width: { xs: '100%', lg: '382px' },
                       gap: '16px',
                       display: 'flex',
                       flexDirection: 'column',
@@ -135,7 +140,7 @@ export default function Advantages() {
                       variant="body2"
                       color="text.secondary"
                       sx={{
-                        maxWidth: '380px',
+                        maxWidth: { xs: '100%', lg: '380px' },
                       }}
                     >
                       {item.description}
