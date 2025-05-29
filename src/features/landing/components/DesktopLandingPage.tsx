@@ -2,10 +2,10 @@ import { Box } from '@mui/material';
 
 import Advantages from './Advantages';
 import AppFeatures from './AppFeatures';
+import DesktopNextTrip from './DesktopNextTrip';
 import Footer from './Footer';
 import Header from './Header';
 import DesktopHero from './Hero/DesktopHero';
-import NextTrip from './NextTrip';
 
 export default function DesktopLandingPage() {
   return (
@@ -17,7 +17,7 @@ export default function DesktopLandingPage() {
         <AppFeatures />
         <Advantages />
       </Box>
-      <NextTrip />
+      <DesktopNextTrip />
       <Footer />
     </>
   );
