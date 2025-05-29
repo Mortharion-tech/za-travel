@@ -7,7 +7,7 @@ import AppFeatures from './AppFeatures';
 import Footer from './Footer';
 import Header from './Header';
 import MobileHero from './Hero/MobileHero';
-import NextTrip from './NextTrip';
+import MobileNextTrip from './MobileNextTrip';
 
 export default function MobileLandingPage() {
   return (
@@ -18,13 +18,14 @@ export default function MobileLandingPage() {
         src={camperMobileImage}
         alt="Camping Van"
         height="384px"
+        sx={{ px: '15px' }}
       />
       <Box sx={{ px: '100px' }}>
         <MobileHero />
         <AppFeatures />
         <Advantages />
       </Box>
-      <NextTrip />
+      <MobileNextTrip />
       <Footer />
     </>
   );
