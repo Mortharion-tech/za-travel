@@ -75,7 +75,7 @@ export default function AppFeatures() {
               href={AppRoutes.addTrip}
               endIcon={<ArrowForwardIcon />}
               sx={{
-                width: '50%',
+                width: { xs: '100%', lg: '50%' },
                 height: '56px',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -138,7 +138,7 @@ export default function AppFeatures() {
               href={AppRoutes.addTrip}
               endIcon={<ArrowForwardIcon />}
               sx={{
-                width: '50%',
+                width: { xs: '100%', lg: '50%' },
                 height: '56px',
                 alignItems: 'center',
                 justifyContent: 'center',
