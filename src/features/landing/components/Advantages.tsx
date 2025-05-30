@@ -30,7 +30,7 @@ export default function Advantages() {
   return (
     <Container
       sx={{
-        width: { xs: '100%', lg: '1720px' },
+        width: { xs: '100%' },
         height: { xs: 'auto', lg: '465px' },
         maxWidth: { xs: '100%', lg: 'none' },
         py: { xs: 4, lg: 0 },
