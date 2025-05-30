@@ -1,20 +1,11 @@
 import CameraIcon from '@mui/icons-material/CameraAlt';
 import DescriptionIcon from '@mui/icons-material/Description';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-import {
-  Box,
-  Container,
-  Paper,
-  Stack,
-  Typography,
-  useTheme,
-} from '@mui/material';
+import { Box, Container, Paper, Stack, Typography } from '@mui/material';
 
 import { Colors } from '@config/styles';
 
 export default function Advantages() {
-  const theme = useTheme();
-
   const advantages = [
     {
       icon: <CameraIcon />,
