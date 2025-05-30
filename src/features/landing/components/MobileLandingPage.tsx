@@ -21,7 +21,7 @@ export default function MobileLandingPage() {
         width="100%"
         sx={{ px: '15px' }}
       />
-      <Box sx={{ px: '100px' }}>
+      <Box sx={{ px: '16px' }}>
         <MobileHero />
         <AppFeatures />
         <Advantages />
