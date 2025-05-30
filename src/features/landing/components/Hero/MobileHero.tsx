@@ -22,7 +22,13 @@ export default function Hero() {
       >
         <Typography
           variant="h1"
-          sx={{ mt: 4, fontSize: '60px', fontWeight: 700 }}
+          sx={{
+            mt: 4,
+            fontSize: '32px !important',
+            fontWeight: 700,
+            lineHeight: '48px !important',
+            letterSpacing: '0.15px',
+          }}
         >
           Your Ultimate Trip Companion
         </Typography>
