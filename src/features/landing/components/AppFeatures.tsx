@@ -76,6 +76,7 @@ export default function AppFeatures() {
               endIcon={<ArrowForwardIcon />}
               sx={{
                 width: { xs: '100%', lg: '50%' },
+                minWidth: '240px',
                 height: '56px',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -139,6 +140,7 @@ export default function AppFeatures() {
               endIcon={<ArrowForwardIcon />}
               sx={{
                 width: { xs: '100%', lg: '50%' },
+                minWidth: '240px',
                 height: '56px',
                 alignItems: 'center',
                 justifyContent: 'center',
