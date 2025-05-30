@@ -3,8 +3,10 @@ import { Box, Link, Stack } from '@mui/material';
 import { AppRoutes } from '@config/routes';
 import AppButton from '@features/ui/AppButton';
 import Logo from '@features/ui/logo/Logo';
+import { useBreakpoints } from '@hooks/useBreakpoints';
 
 export default function Header() {
+  const { md } = useBreakpoints();
   return (
     <Box
       sx={{
@@ -33,14 +35,16 @@ export default function Header() {
           >
             Log in
           </AppButton>
-          <AppButton
-            variant="contained"
-            color="primary"
-            LinkComponent={Link}
-            href={AppRoutes.signUp}
-          >
-            Sign up
-          </AppButton>
+          {md && (
+            <AppButton
+              variant="contained"
+              color="primary"
+              LinkComponent={Link}
+              href={AppRoutes.signUp}
+            >
+              Sign up
+            </AppButton>
+          )}
         </Stack>
       </Stack>
     </Box>
