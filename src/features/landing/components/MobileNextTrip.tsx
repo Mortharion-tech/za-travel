@@ -45,7 +45,7 @@ export default function NextTrip() {
           }}
         >
           <Typography
-            variant="h3"
+            variant="h2"
             component="h2"
             sx={{
               color: Colors.primaryGreen,
