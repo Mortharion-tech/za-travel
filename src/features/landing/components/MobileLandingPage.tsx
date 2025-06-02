@@ -1,3 +1,5 @@
+import * as motion from 'motion/react-client';
+
 import { Box } from '@mui/material';
 
 import camperMobileImage from '@features/landing/assets/camping-van-mobile.png';
@@ -13,20 +15,50 @@ export default function MobileLandingPage() {
   return (
     <>
       <Header />
-      <Box
-        component="img"
-        src={camperMobileImage}
-        alt="Camping Van"
-        height="384px"
-        width="100%"
-        sx={{ px: '15px' }}
-      />
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ amount: 0.5 }}
+      >
+        <Box
+          component="img"
+          src={camperMobileImage}
+          alt="Camping Van"
+          height="384px"
+          width="100%"
+          sx={{ px: '15px' }}
+        />
+      </motion.div>
       <Box sx={{ px: '16px' }}>
-        <MobileHero />
-        <AppFeatures />
-        <Advantages />
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ amount: 0.5 }}
+        >
+          <MobileHero />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ amount: 0.5 }}
+        >
+          <AppFeatures />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ amount: 0.5 }}
+        >
+          <Advantages />
+        </motion.div>
       </Box>
-      <MobileNextTrip />
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ amount: 0.5 }}
+      >
+        <MobileNextTrip />
+      </motion.div>
       <Footer />
     </>
   );
