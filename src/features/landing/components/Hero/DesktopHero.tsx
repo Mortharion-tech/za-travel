@@ -75,6 +75,7 @@ export default function Hero() {
               color="primary"
               LinkComponent={Link}
               href={AppRoutes.addTrip}
+              sx={{ minWidth: '190px' }}
             >
               Plan your trip
             </AppButton>
@@ -83,6 +84,7 @@ export default function Hero() {
               color="primary"
               LinkComponent={Link}
               href={AppRoutes.login}
+              sx={{ minWidth: '190px' }}
             >
               Learn more
             </AppButton>
