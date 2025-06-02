@@ -1,3 +1,5 @@
+import * as motion from 'motion/react-client';
+
 import { Box } from '@mui/material';
 
 import Advantages from './Advantages';
@@ -13,11 +15,35 @@ export default function DesktopLandingPage() {
       <Header />
       <Box sx={{ height: '32px' }} />
       <Box sx={{ px: '100px' }}>
-        <DesktopHero />
-        <AppFeatures />
-        <Advantages />
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ amount: 0.8 }}
+        >
+          <DesktopHero />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ amount: 0.5 }}
+        >
+          <AppFeatures />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ amount: 0.8 }}
+        >
+          <Advantages />
+        </motion.div>
       </Box>
-      <DesktopNextTrip />
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ amount: 0.8 }}
+      >
+        <DesktopNextTrip />
+      </motion.div>
       <Footer />
     </>
   );
