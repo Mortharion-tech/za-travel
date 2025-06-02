@@ -18,21 +18,21 @@ export default function DesktopLandingPage() {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ amount: 0.8 }}
+          viewport={{ amount: 0.6 }}
         >
           <DesktopHero />
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ amount: 0.5 }}
+          viewport={{ amount: 0.25 }}
         >
           <AppFeatures />
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ amount: 0.8 }}
+          viewport={{ amount: 0.9 }}
         >
           <Advantages />
         </motion.div>
@@ -40,7 +40,7 @@ export default function DesktopLandingPage() {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        viewport={{ amount: 0.8 }}
+        viewport={{ amount: 0.9 }}
       >
         <DesktopNextTrip />
       </motion.div>
