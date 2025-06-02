@@ -40,14 +40,14 @@ export default function MobileLandingPage() {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ amount: 0.5 }}
+          viewport={{ amount: 0.2 }}
         >
           <AppFeatures />
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ amount: 0.5 }}
+          viewport={{ amount: 0.3 }}
         >
           <Advantages />
         </motion.div>
@@ -55,7 +55,7 @@ export default function MobileLandingPage() {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        viewport={{ amount: 0.5 }}
+        viewport={{ amount: 0.7 }}
       >
         <MobileNextTrip />
       </motion.div>
