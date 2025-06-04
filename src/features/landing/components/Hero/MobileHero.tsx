@@ -28,6 +28,7 @@ export default function Hero() {
             fontWeight: 700,
             lineHeight: '48px !important',
             letterSpacing: '0.15px',
+            textAlign: 'center',
           }}
         >
           Your Ultimate Trip Companion
@@ -35,11 +36,16 @@ export default function Hero() {
 
         <Typography
           variant="body1"
-          sx={{ mt: 2, color: '#64727C', fontSize: '18px' }}
+          sx={{
+            mt: 2,
+            color: '#64727C',
+            fontSize: '18px',
+            textAlign: 'center',
+          }}
         >
           Welcome to ZaTravel - Your Passport to Seamless Adventures! Discover,
           plan, and track your journeys effortlessly with our intuitive web
-          application. Start exploring now!
+          application.
         </Typography>
 
         <Box sx={{ display: 'flex', gap: 2, mt: 4 }}>
