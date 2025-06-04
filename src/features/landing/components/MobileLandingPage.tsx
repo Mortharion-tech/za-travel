@@ -18,7 +18,7 @@ export default function MobileLandingPage() {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        viewport={{ amount: 0.5 }}
+        viewport={{ amount: 0.3 }}
       >
         <Box
           component="img"
@@ -40,7 +40,7 @@ export default function MobileLandingPage() {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ amount: 0.2 }}
+          viewport={{ amount: 0.15 }}
         >
           <AppFeatures />
         </motion.div>
