@@ -9,7 +9,7 @@ import expensesShowcaseImage from '../assets/expenses-showcase.png';
 
 export default function AppFeatures() {
   return (
-    <Container maxWidth={false} sx={{ maxWidth: '1720px', py: 6 }}>
+    <Container maxWidth={false} sx={{ maxWidth: '1720px', py: 6, px: 0 }}>
       <Box sx={{ textAlign: 'center', mb: 6 }}>
         <Typography variant="subtitle1" color="primary" gutterBottom>
           FEATURES
