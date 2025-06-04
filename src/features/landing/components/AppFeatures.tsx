@@ -48,7 +48,7 @@ export default function AppFeatures() {
           </Card>
         </Grid>
         <Grid item xs={12} md={6}>
-          <Box sx={{ maxWidth: '90%', mx: { xs: 'auto', md: 0 } }}>
+          <Box sx={{ maxWidth: '90%', mx: 0 }}>
             <Typography
               variant="subtitle1"
               color="primary"
@@ -68,6 +68,7 @@ export default function AppFeatures() {
             <Typography
               variant="body1"
               color="text.secondary"
+              fontSize={{ xs: '18px', md: '20px' }}
               paragraph
               sx={{ lineHeight: 1.8, mb: 3 }}
             >
