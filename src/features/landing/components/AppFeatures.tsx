@@ -14,8 +14,18 @@ export default function AppFeatures() {
         <Typography variant="subtitle1" color="primary" gutterBottom>
           FEATURES
         </Typography>
-        <Typography variant="h3" component="h1" gutterBottom>
-          ZaTravel best solution for travel
+        <Typography
+          variant="h3"
+          component="h2"
+          gutterBottom
+          fontFamily="poppins"
+          sx={{
+            fontSize: { xs: '26px', md: '40px' },
+            fontWeight: '600',
+            letterSpacing: '0.15px',
+          }}
+        >
+          ZaTravel - best solution for travelling
         </Typography>
       </Box>
 
