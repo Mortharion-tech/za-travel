@@ -11,7 +11,7 @@ export default function Header() {
     <Box
       sx={{
         px: { xs: '16px', lg: '100px' },
-        py: { xs: '8px', lg: '20px' },
+        py: { xs: '8px', lg: '15px' },
         width: '100%',
       }}
     >
