@@ -104,7 +104,7 @@ export default function Hero() {
             <AvatarGroup max={4}>
               <Avatar src="../../assets/avatar1.png" />
               <Avatar src="../../assets/avatar2.png" />
-              <Avatar src="/static/images/avatar/4.jpg" />
+              <Avatar src="../../assets/avatar3.png" />
               <Avatar src="/static/images/avatar/5.jpg" />
             </AvatarGroup>
             <Typography variant="body2" color="text.secondary">
