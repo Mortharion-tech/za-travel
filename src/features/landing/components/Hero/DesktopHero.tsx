@@ -11,6 +11,10 @@ import { AppRoutes } from '@config/routes';
 import PlaneIcon from '@features/dashboard/components/Hero/PlaneIcon';
 import AppButton from '@features/ui/AppButton';
 
+import avatar1Image from '../../assets/avatar1.png';
+import avatar2Image from '../../assets/avatar2.png';
+import avatar3Image from '../../assets/avatar3.png';
+import avatar4Image from '../../assets/avatar4.png';
 import campingVanImage from '../../assets/camping-van.png';
 import citySkylineImage from '../../assets/city-skyline.png';
 import oceanCoastImage from '../../assets/ocean-coast.png';
