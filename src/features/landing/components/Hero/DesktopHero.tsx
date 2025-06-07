@@ -106,10 +106,10 @@ export default function Hero() {
           >
             <Typography fontWeight="medium">1200+ users</Typography>
             <AvatarGroup max={4}>
-              <Avatar src="../../assets/avatar1.png" />
-              <Avatar src="../../assets/avatar2.png" />
-              <Avatar src="../../assets/avatar3.png" />
-              <Avatar src="../../assets/avatar4.png" />
+              <Avatar src={avatar1Image} />
+              <Avatar src={avatar2Image} />
+              <Avatar src={avatar3Image} />
+              <Avatar src={avatar4Image} />
             </AvatarGroup>
             <Typography variant="body2" color="text.secondary">
               Track their trips in our App.
