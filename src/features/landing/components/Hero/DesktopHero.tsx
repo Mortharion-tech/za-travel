@@ -103,7 +103,7 @@ export default function Hero() {
             <Typography fontWeight="medium">1200+ users</Typography>
             <AvatarGroup max={4}>
               <Avatar src="../../assets/avatar1.png" />
-              <Avatar src="/static/images/avatar/2.jpg" />
+              <Avatar src="../../assets/avatar2.png" />
               <Avatar src="/static/images/avatar/4.jpg" />
               <Avatar src="/static/images/avatar/5.jpg" />
             </AvatarGroup>
