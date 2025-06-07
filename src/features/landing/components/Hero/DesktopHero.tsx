@@ -105,7 +105,7 @@ export default function Hero() {
               <Avatar src="../../assets/avatar1.png" />
               <Avatar src="../../assets/avatar2.png" />
               <Avatar src="../../assets/avatar3.png" />
-              <Avatar src="/static/images/avatar/5.jpg" />
+              <Avatar src="../../assets/avatar4.png" />
             </AvatarGroup>
             <Typography variant="body2" color="text.secondary">
               Track their trips in our App.
