@@ -80,7 +80,7 @@ export default function Hero() {
             <Avatar src={avatar1Image} />
             <Avatar src={avatar2Image} />
             <Avatar src={avatar3Image} />
-            <Avatar src="/static/images/avatar/5.jpg" />
+            <Avatar src={avatar4Image} />
           </AvatarGroup>
           <Typography variant="body2" color="text.secondary">
             Track their trips in our App.
