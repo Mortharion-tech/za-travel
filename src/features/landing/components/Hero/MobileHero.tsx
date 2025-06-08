@@ -77,7 +77,7 @@ export default function Hero() {
         >
           <Typography fontWeight="medium">1200+ users</Typography>
           <AvatarGroup max={4}>
-            <Avatar src="/static/images/avatar/1.jpg" />
+            <Avatar src={avatar1Image} />
             <Avatar src="/static/images/avatar/2.jpg" />
             <Avatar src="/static/images/avatar/4.jpg" />
             <Avatar src="/static/images/avatar/5.jpg" />
