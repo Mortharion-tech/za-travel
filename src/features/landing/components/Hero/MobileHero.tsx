@@ -3,6 +3,8 @@ import { Avatar, AvatarGroup, Box, Link, Typography } from '@mui/material';
 import { AppRoutes } from '@config/routes';
 import AppButton from '@features/ui/AppButton';
 
+import avatar1Image from '../../assets/avatar1.png';
+
 export default function Hero() {
   return (
     <Box
